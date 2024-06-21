@@ -9,6 +9,7 @@ function App() {
   let [view, setView] = React.useState("all");
   let [filteredTodos, setFilteredTodos] = React.useState([]);
 
+  // Function to add a new todo
   function addTodo(title, desc) {
     console.log("added");
     let newTodo = {
@@ -20,6 +21,7 @@ function App() {
     setTodos([...todos, newTodo]);
   }
 
+  // Function to edit a todo
   function editTodo(id, newTitle, newDesc) {
     setTodos(
       todos.map((todo) => ({
@@ -30,6 +32,7 @@ function App() {
     );
   }
 
+  // Function to delete a todo
   function deleteTodo(id) {
     setTodos(todos.filter((todo) => todo.id !== id));
   }

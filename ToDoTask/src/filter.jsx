@@ -2,6 +2,7 @@ import React from "react";
 
 function Filter({ changeView }) {
   return (
+    //  Filtered todos based on selected filter
     <div className="filter">
       <label htmlFor="filter-todos">Status Filter: </label>
       <select

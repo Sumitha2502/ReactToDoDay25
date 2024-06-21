@@ -16,6 +16,7 @@ function Todo({
     <div
       className={completed ? "todo todo-completed" : "todo todo-not completed"}
     >
+        {/* To edit the existing todo */}
       {edit && (
         <input
           type="text"

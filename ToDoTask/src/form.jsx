@@ -4,6 +4,7 @@ function Form({ addTodo }) {
   let [title, setTitle] = React.useState("");
   let [desc, setDesc] = React.useState("");
   return (
+    // To get todo from the user 
     <div className="form">
       <input
         type="text"
