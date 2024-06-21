@@ -9,9 +9,9 @@ function Todo({
   editTodo,
   deleteTodo,
 }) {
-  let [edit, setEdit] = React.useState(false);
-  let [newTitle, setNewTitle] = React.useState(title);
-  let [newDesc, setNewDesc] = React.useState(description);
+  const [edit, setEdit] = React.useState(false);
+  const [newTitle, setNewTitle] = React.useState(title);
+  const [newDesc, setNewDesc] = React.useState(description);
   return (
     <div
       className={completed ? "todo todo-completed" : "todo todo-not completed"}

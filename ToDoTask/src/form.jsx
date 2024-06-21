@@ -1,8 +1,8 @@
 import React from "react";
 
 function Form({ addTodo }) {
-  let [title, setTitle] = React.useState("");
-  let [desc, setDesc] = React.useState("");
+  const [title, setTitle] = React.useState("");
+  const [desc, setDesc] = React.useState("");
   return (
     // To get todo from the user 
     <div className="form">

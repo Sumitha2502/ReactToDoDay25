@@ -5,9 +5,9 @@ import Filter from "./filter.jsx";
 import Todo from "./todo.jsx";
 
 function App() {
-  let [todos, setTodos] = React.useState([]);
-  let [view, setView] = React.useState("all");
-  let [filteredTodos, setFilteredTodos] = React.useState([]);
+  const [todos, setTodos] = React.useState([]);
+  const [view, setView] = React.useState("all");
+  const [filteredTodos, setFilteredTodos] = React.useState([]);
 
   // Function to add a new todo
   function addTodo(title, desc) {
