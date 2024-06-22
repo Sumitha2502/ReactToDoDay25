@@ -3,6 +3,7 @@ import React from "react";
 import Form from "./form.jsx";
 import Filter from "./filter.jsx";
 import Todo from "./todo.jsx";
+import "/node_modules/bootstrap/dist/css/bootstrap.css";
 
 function App() {
   const [todos, setTodos] = React.useState([]);
